@@ -17,9 +17,11 @@ namespace OOPukol2
             InitializeComponent();
         }
         NakladniAuto noveauto;
+        Tahac novytahac;
         private void button1_Click(object sender, EventArgs e)
         {
-            noveauto = new NakladniAuto(textBox1.Text,(short) numericUpDown3.Value);
+            //noveauto = new NakladniAuto(textBox1.Text,(short) numericUpDown3.Value);
+            novytahac = new Tahac(textBox1.Text, (short)numericUpDown3.Value,10);
             panel1.Enabled = true;
         }
 
