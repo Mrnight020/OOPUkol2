@@ -21,7 +21,7 @@ namespace OOPukol2
         private void button1_Click(object sender, EventArgs e)
         {
             //noveauto = new NakladniAuto(textBox1.Text,(short) numericUpDown3.Value);
-            novytahac = new Tahac(textBox1.Text, (short)numericUpDown3.Value,10);
+            novytahac = new Tahac(textBox1.Text, (short)numericUpDown3.Value,(short)numericUpDown4.Value);
             panel1.Enabled = true;
         }
 

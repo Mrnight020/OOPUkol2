@@ -12,7 +12,7 @@ namespace OOPukol2
         public Tahac(string spz,short nosnost, short nosnostvlecky):base(spz, nosnost) 
         {
             nosnostVlecky = nosnostvlecky;
-            nosnost += nosnostVlecky;
+            base.nosnost += nosnostVlecky;
         }
 
         public short Vrat()
