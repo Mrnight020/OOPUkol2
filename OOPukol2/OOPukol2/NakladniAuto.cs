@@ -10,13 +10,13 @@ namespace OOPukol2
     internal class NakladniAuto
     {
 
-        private string spz;
-        private short nosnost; 
+        protected string spz;
+        protected short nosnost;
 
-        private short hmotnostnakladu;
+        protected short hmotnostnakladu;
         public short HmotnostNakladu { get => hmotnostnakladu; }
 
-        public NakladniAuto(string spz, short nosnost)
+        public NakladniAuto(string spz,short nosnost)
         {
             this.spz = spz;
             this.nosnost = nosnost;

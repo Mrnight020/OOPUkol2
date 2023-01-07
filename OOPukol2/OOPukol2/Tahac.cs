@@ -9,10 +9,14 @@ namespace OOPukol2
     internal class Tahac : NakladniAuto
     {
         private short nosnostVlecky;
-        public Tahac(string spz, short nosnost,short nosnostvlecky):base(spz, nosnost) 
+        public Tahac(string spz,short nosnost, short nosnostvlecky):base(spz, nosnost) 
         {
             nosnostVlecky = nosnostvlecky;
-            nosnost += nosnostvlecky;
+            nosnost += nosnostVlecky;
         }
+
+        public short Vrat()
+        { return nosnost; }
+
     }
 }

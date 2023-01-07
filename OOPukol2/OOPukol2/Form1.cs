@@ -16,7 +16,7 @@ namespace OOPukol2
         {
             InitializeComponent();
         }
-        NakladniAuto noveauto;
+        //NakladniAuto noveauto;
         Tahac novytahac;
         private void button1_Click(object sender, EventArgs e)
         {
@@ -27,17 +27,18 @@ namespace OOPukol2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            noveauto.NalozNaklad((short)numericUpDown1.Value);
+            novytahac.NalozNaklad((short)numericUpDown1.Value);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            noveauto.VylozNaklad((short)numericUpDown2.Value);
+            novytahac.VylozNaklad((short)numericUpDown2.Value);
         }
 
         private void button4_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(noveauto.ToString());
+        {      
+            MessageBox.Show(novytahac.ToString());
+            MessageBox.Show("pókus :" + novytahac.Vrat());
         }
     }
 }
